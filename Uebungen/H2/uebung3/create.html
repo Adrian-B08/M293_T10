@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Erstellen</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Blog Erstellen</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="create.html">Create</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h2>Neuen Blog-Beitrag erstellen</h2>
+            <form id="blogForm">
+                <div>
+                    <label for="title">Titel:</label>
+                    <input type="text" id="title" name="title" required>
+                </div>
+                <div>
+                    <label for="author">Autor:</label>
+                    <input type="text" id="author" name="author" required>
+                </div>
+                <div>
+                    <label for="date">Datum:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div>
+                    <label for="content">Inhalt:</label>
+                    <textarea id="content" name="content" rows="10" required></textarea>
+                </div>
+                <div>
+                    <label for="image">Bild-URL:</label>
+                    <input type="url" id="image" name="image">
+                </div>
+                <button type="submit">Erstellen</button>
+            </form>
+        </article>
+    </main>
+    <footer>
+        <p>Footer</p>
+    </footer>
+    <script>
+        document.getElementById('blogForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            alert('Blog-Beitrag erstellt!');
+        });
+    </script>
+</body>
+
+</html>

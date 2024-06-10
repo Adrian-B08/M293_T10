@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Demographische Datenerhebung</title>
+</head>
+
+<body>
+    <form action="/submit" method="post">
+            <legend>Persönliche Informationen</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br>
+            <label for="age">Alter:</label>
+            <input type="number" id="age" name="age"><br>
+            <label for="gender">Geschlecht:</label>
+            <select id="gender" name="gender">
+                <optgroup label="Optionen">
+                    <option value="male">Männlich</option>
+                    <option value="female">Weiblich</option>
+                </optgroup>
+            </select><br><br>
+
+            <legend>Kontaktinformationen</legend>
+            <label for="email">E-Mail:</label>
+            <input type="email" id="email" name="email"><br>
+            <label for="phone">Telefonnummer:</label>
+            <input type="tel" id="phone" name="phone"><br>
+
+        <input type="submit" value="Absenden">
+    </form>
+</body>
+
+</html>

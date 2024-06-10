@@ -1,0 +1,124 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+
+.info_navbar {
+    margin-right: 20px;
+}
+
+.login_navbar {
+    margin-left: auto;
+    display: block;
+}
+
+
+
+.dropdown {
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+
+}
+
+
+.dropbtn {
+    background-color: #ffffff;
+    font-family: ui-sans-serif, -apple-system, system-ui;
+    font-weight: bold;
+    font-size: 18px;
+    color: #7D7D7D;
+    padding: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 133px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 16px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+.input-container {
+    margin-top: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.text-input {
+    width: 500px;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.footer {
+display: flex;
+justify-content: center;
+width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.chatgpt_logo{
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    width: 46px;
+    height: 46px;
+    margin-bottom: 20px;
+}
+
+    .promptExamples {
+    width: 600px;
+    height: 150px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
