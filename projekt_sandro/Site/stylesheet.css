@@ -52,7 +52,15 @@ body {
     margin: 30px auto 0;
 }
 
+.container h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
 
+.container p {
+    color: #666;
+    margin-bottom: 20px;
+}
 
 .titelbild {
     width: 100%;
@@ -66,16 +74,6 @@ body {
     height: auto;
     max-height: 300px;
     object-fit: cover;
-}
-
-.container h1 {
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.container p {
-    color: #666;
-    margin-bottom: 20px;
 }
 
 .buttons {
@@ -213,3 +211,209 @@ body {
 .aboutUs-info div:first-child {
     margin-right: 10px;
 }
+
+/* LogIn Button */
+/* Allgemeine Form-Stile */
+.form-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.formElements {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.formElements label {
+    flex: 1;
+    margin-right: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+.formElements input,
+.formElements select {
+    flex: 2;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.formElements input:focus,
+.formElements select:focus {
+    border-color: #66afe9;
+    outline: none;
+    box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+.formElements input[type="checkbox"] {
+    width: auto;
+    margin-left: 10px;
+}
+
+.submit-button {
+    background-color: #ede080;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.submit-button:hover {
+    background-color: #e3b313;
+}
+
+/* LogIn Button */
+.logIn {
+    background-color: #f0e68c;
+    border-radius: 100px;
+    box-shadow: rgba(204, 153, 0, 0.2) 0 -25px 18px -14px inset,
+    rgba(204, 153, 0, 0.15) 0 1px 2px,
+    rgba(204, 153, 0, 0.15) 0 2px 4px,
+    rgba(204, 153, 0, 0.15) 0 4px 8px,
+    rgba(204, 153, 0, 0.15) 0 8px 16px,
+    rgba(204, 153, 0, 0.15) 0 16px 32px;
+    color: #8b8000;
+    cursor: pointer;
+    display: inline-block;
+    font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.logIn:hover {
+    box-shadow: rgba(204, 153, 0, 0.35) 0 -25px 18px -14px inset,
+    rgba(204, 153, 0, 0.25) 0 1px 2px,
+    rgba(204, 153, 0, 0.25) 0 2px 4px,
+    rgba(204, 153, 0, 0.25) 0 4px 8px,
+    rgba(204, 153, 0, 0.25) 0 8px 16px,
+    rgba(204, 153, 0, 0.25) 0 16px 32px;
+    transform: scale(1.05) rotate(-1deg);
+}
+
+/* LogIn Form */
+#logInForm {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#logInForm label {
+    margin-bottom: 8px;
+    color: #333;
+    display: block;
+    font-weight: bold;
+}
+
+/* LogIn Form Inputs */
+#logInForm_username,
+#logInForm_email,
+#logInForm_password {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+#logInForm_username:focus,
+#logInForm_email:focus,
+#logInForm_password:focus {
+    border-color: #66afe9;
+    outline: none;
+    box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+#logInForm_username::placeholder,
+#logInForm_password::placeholder,
+#logInForm_email::placeholder {
+    color: #999;
+}
+
+/* Submit Button */
+.logInForm_submit {
+    background-color: #ede080;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.logInForm_submit:hover {
+    background-color: #e3b313;
+}
+
+
+
+/* sucess registration page */
+
+.confirmation-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+.confirmation-container h1 {
+    color: #333;
+}
+.confirmation-container p {
+    font-size: 18px;
+    color: #555;
+}
+.button-rankList {
+    background-color: #ede080;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    text-decoration: none;
+}
+.button-rankList:hover {
+    background-color: #e3b313;
+}
+
+
+
+
+
+
+
